@@ -1,0 +1,30 @@
+# IDE
+.idea/
+.vscode/
+
+# Dependencies
+node_modules/
+
+# Build
+dist/
+build/
+
+# Logs
+logs/
+*.log
+
+# Environment variables
+.env
+.env.local
+
+# Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+go.work
+
+# System
+.DS_Store
+Thumbs.db
