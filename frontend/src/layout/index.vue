@@ -55,10 +55,11 @@ const route = useRoute()
 const router = useRouter()
 const userStore = useUserStore()
 
-const handleCommand = (command) => {
+const handleCommand = async (command) => {
   if (command === 'logout') {
-    localStorage.removeItem('token')
-    router.push('/login')
+    userStore.clearUserInfo()
+    ElMessage.success('退出登录成功')
+    await router.push('/login')
   }
 }
 </script>
